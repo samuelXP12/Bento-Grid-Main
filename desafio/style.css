@@ -1,0 +1,487 @@
+body {
+    height: 100vh;
+    background-color: hsl(255, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-template-area {
+    display: grid;
+    grid: 
+    "column1 column2 column3"
+    "column1 column2 column3"
+    "column1 column4 column4";
+    grid-template-columns: 0.979fr 2.120fr 1fr;
+    grid-template-rows: 220px 235px 200px;
+    max-width: 894px;
+    /* min-height: 700px; */
+    gap: 25px;
+    margin: 13px 13px;
+}
+/* .grid-template-area .star{
+    background: var(--background-color-star-followers);
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-template-area .manage {
+    background: var(--background-color-branco);
+    padding: 18px;
+    overflow: hidden;
+}
+.grid-template-area .maintain {
+    background-color: var(--background-color-amarelo);
+    overflow: hidden;
+    padding: 18px;
+}
+.grid-template-area .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    gap: 20px;
+    padding: 23px;
+    overflow: hidden;
+    background: var(--background-color-media);
+}
+.grid-template-area .porcentagem {
+    background: var(--background-color-branco);
+    padding: 10px 15px;
+}
+.grid-template-area .followers {
+    background: var(--background-color-star-followers);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+.grid-template-area .star, .manage, .maintain, .media, .followers, .porcentagem, .quicker, .write {
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px rgb(193, 193, 193);
+}
+
+.column-one {
+    grid-area: column1;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 2fr 2.100fr;
+    gap: 25px;
+}
+.column-two {
+    grid-area: column2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px 197px;
+    display: grid;
+    gap: 25px;
+}
+.grid-template-area .dupla {
+    gap: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column-three {
+    grid-area: column3;
+    display: grid;
+}
+.column-four {
+    grid-area: column4;
+    display: grid;
+    grid-template-columns: 0.90fr 1.9fr;
+    gap: 25px;
+}
+
+
+
+
+.grid-template-area .quicker {
+    padding: 0px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bacground-color-quicker);
+}
+.grid-template-area .quicker img {
+    max-width: 155px;
+    margin: 10px auto;
+    top: 10px;
+    position: relative;
+}
+.grid-template-area .quicker h1 {
+    transform: rotatey(20deg);
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    line-height: 29px;
+    font-size: 32px;
+}
+.grid-template-area .quicker span {
+    font-family: "italico";
+    color: hsl(256, 67%, 59%);
+}
+
+.grid-template-area .write {
+    background: var(--background-color-amarelo);
+    overflow: hidden;
+    /* padding: 17px 10px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-template-area .write h1 {
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 29px;
+    padding: 6px 0px;
+    transform: rotatey(-20deg);
+}
+.grid-template-area .write img {
+    max-width: 100%;
+    padding: 6px 0px 16px 10px;
+}
+
+
+
+
+.grid-template-area .star{
+    background: var(--background-color-star-followers);
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.column-two .star h1 {
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 46px;
+    color: var(--background-color-branco);
+}
+.grid-template-area .star .desx {
+    color: hsl(39, 100%, 71%);
+}
+.grid-template-area .star .faster {
+    font-family: "italico";
+}
+.grid-template-area .star img {
+    max-width: 155px;
+    margin-top: 18px;
+}
+.grid-template-area .star p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.grid-template-area .manage {
+    background: var(--background-color-branco);
+    padding: 18px;
+    overflow: hidden;
+}
+.grid-template-area .manage img {
+    max-width: 260px;
+}
+.grid-template-area .manage h2 {
+    margin-top: 12px;
+    line-height: 21px;
+    font-size: 26px;
+    letter-spacing: -1.2px;
+    font-weight: 500;
+}
+
+
+
+
+.grid-template-area .maintain {
+    background-color: var(--background-color-amarelo);
+    overflow: hidden;
+    padding: 18px;
+}
+.grid-template-area .maintain img {
+    max-width: 165px;
+    margin-top: 13px;
+}
+.grid-template-area .maintain h2 {
+    line-height: 22px;
+    font-size: 26px;
+    letter-spacing: -1.7px;
+    font-weight: 500;
+}
+
+.grid-template-area .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    gap: 20px;
+    padding: 23px;
+    overflow: hidden;
+    background: var(--background-color-media);
+}
+.grid-template-area .media h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    /* transform: rotateY(20deg); */
+}
+.grid-template-area .media img {    
+    width: 285px;
+}
+.grid-template-area .media p {
+    /* font-family: "font"; */
+    /* font-weight: 400; */
+    font-size: 14.7px;
+    line-height: 16px;
+}
+
+
+
+
+.grid-template-area .porcentagem {
+    background: var(--background-color-branco);
+    padding: 10px 0px 15px 15px;
+}
+.grid-template-area .porcentagem .numeros {
+    display: flex;
+    font-weight: 500;
+    font-size: 50px;
+}
+.grid-template-area .porcentagem .numeros .um {
+    position: relative;
+    bottom: 4px;
+    left: 3px;
+}
+.column-four .porcentagem .text-audience {
+    font-size: 14px;
+    margin-top: 5px;
+    letter-spacing: 0.2px;
+    transform: rotateY(-20deg);
+} 
+.grid-template-area .porcentagem img {
+    margin-top: 30px;
+    max-width: 145PX;
+    margin-left: 5px;
+}
+
+
+
+
+.grid-template-area .followers {
+    background: var(--background-color-star-followers);
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.grid-template-area .followers img {
+    max-width: 185px;
+}
+.grid-template-area .followers h2 {
+    font-size: 29px;
+    line-height: 28px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 815px) {
+    .grid-template-area {
+        display: grid;
+        grid: 
+        "column2 column3"
+        "column2 column3"
+        "column4 column4"
+        "column1 column1";
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 220px 235px 200px 220px;
+        max-width: 750px;
+        /* min-height: 700px; */
+        gap: 25px;
+    }
+    .column-one {
+        grid-area: column1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        align-items: start;
+    }
+
+    .grid-template-area {
+        display: grid;
+        grid: 
+        "column2"
+        "column3"
+        "column4"
+        "column1";
+        grid-template-columns: 1fr;
+        grid-template-rows: 600px 375px 500px 495px;
+        /* grid-template-rows: .050fr 1fr 1fr 1fr; */
+        max-width: 750px;
+        gap: 25px;
+        margin: 23px 13px;
+
+    }
+    .column-one {
+        grid-area: column1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .640fr .990fr;
+        gap: 25px;
+    }
+    .column-two {
+        grid-area: column2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.3fr 1.9fr;
+        display: grid;
+        gap: 25px;
+    }
+    .grid-template-area .dupla {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .450fr .570fr;
+    }
+    .column-three {
+        grid-area: column3;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .column-four {
+        grid-area: column4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 175px;
+        gap: 25px;
+    }
+    .porcentagem {
+        grid-row: 2;
+    }
+
+    
+.grid-template-area .quicker {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: start;
+    justify-content: start;
+}
+.grid-template-area .quicker img {
+    margin: 0px 13px;
+    top: 20px;
+}
+.grid-template-area .quicker h1 {
+    font-size: 28px;
+}
+
+
+.grid-template-area .write {
+    justify-content: space-evenly;
+}
+.grid-template-area .write h1 {
+    font-size: 27px;
+}
+.grid-template-area .write img {
+    max-width: 190px;
+    padding: 6px 0px 16px 10px;
+}
+
+
+.grid-template-area .star{
+    padding: 0px 30px;
+}
+.grid-template-area .star h1 {
+    font-size: 35px;
+    line-height: 35px;
+}
+
+
+.grid-template-area .manage {
+    padding: 16px 13px;
+}
+.grid-template-area .manage h2 {
+    font-size: 21px;
+}
+
+
+
+
+.grid-template-area .maintain {
+    padding: 13px;
+}
+.grid-template-area .maintain h2 {
+    font-size: 22px;
+}
+
+.grid-template-area .media {
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 10px 15px;
+}
+.grid-template-area .media h1 {
+    padding: 0px 12px;
+    font-size: 20px;
+}
+.grid-template-area .media img {    
+    width: 250px;
+}
+.grid-template-area .media p {
+    padding: 0px 5px;
+    text-align: center;
+}
+
+
+
+
+.grid-template-area .porcentagem {
+    padding: 10px 0px 15px 5px;
+}
+.grid-template-area .porcentagem .numeros {
+    font-size: 40px;
+    padding-left: 10px;
+}
+.grid-template-area .porcentagem .numeros .um {
+    bottom: 6px;
+}
+.grid-template-area .porcentagem .numeros .dois {
+    font-size: 37px;
+}
+.column-four .porcentagem .text-audience {
+    margin-top: 0px;
+    letter-spacing: 0.6px;
+} 
+.grid-template-area .porcentagem img {
+    margin-top: 20px;
+    max-width: 144PX;
+    margin-left: 15px;
+}
+
+
+
+
+.grid-template-area .followers {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grid-template-area .followers h2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 600;
+}
+}

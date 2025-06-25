@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-template-area {
+    font-family: "font";
+}
+
+@font-face {
+    font-family: "font";
+    src: url(/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: "italico";
+    src: url(/assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}

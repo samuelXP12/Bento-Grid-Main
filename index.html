@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bento grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  Social Media 10x Faster with AI
+  Over 4,000 5-star reviews
+
+  Manage multiple accounts and platforms.
+
+  Maintain a consistent posting schedule.
+
+  Schedule to social media.
+  Optimize post timings to publish content at the perfect time for your audience.
+  
+  Grow followers with non-stop content.
+
+  >56% faster audience growth
+  
+  Create and schedule content quicker.
+
+  Write your content using AI.
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <div class="aula">
+    <!-- <h2>AULA 1</h2>
+
+    <h3>GRID SIGNIFICA GRADE. DEVO IMGINAR UMA GRADE FORMADA POR LINHAS HORIZONTAL(EM LINHA-FILEIRA) E VERTICAL(COLUNAS)</h3>
+
+    <h3>SOMENTE GRID NO CONTAINER NAO IRA MUDAR NADA, POIS PRECISA DAS PROPRIEDADES APLICADAS NO PAI E NOS FILHOS</h3>
+
+    <div class="aula-1">
+        <h2>display: GRID; *apenas</h2>
+
+        <div class="grid containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <hr>
+
+        <h2>display: INLINE-GRID;</h2>
+        <p>OS FILHOS DEIXAO DE OCUPAR TODO O ESPAÇO DO PAI E PASSARAO A OCUPAR SOMENTE O TAMANHO DO SEU CONTEUDO, E IRAO ACOMPANHAR O TAMANHO DE ACORDO COM O TAMANHO DO CONTEUDO DOS IRMAOS</p>
+
+
+        <div class="inline-grid containers">
+
+            <div class="item">item 1 tamanho igual</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <hr>
+
+        <h1>GRID CONTAINER</h1>
+
+        <h2>A PROPRIEDADE PARA CRIAR AS LINHAS DAS COLUNAS(VERTICAL) E FILEIRAS(HORIZONTAL)</h2>
+
+        <p>COLUMNS IRA DEFINIR QUANTAS COLUNAS(TRANSVERSAL) VAI TER MINHA GRADE. O AUTO IRA CALCULAR O TAMANNHO DAS COLUNAS EM RELAÇAO AO CONTAINER PAI, OU POSSO COLOCAR O TAMANHO DAS COLUNAS EM PXs.</p>
+        <p>PS: SE EU PASSAR APENAS UM VALOR, UMA COLUNAS SERA FORMADA. PRA FAZER 3 COLUNAS PRECISO CITAR 3 VALORES. SEJAM EM PXs OU AUTO</p>
+
+        <h3>grid-template-columns: AUTO AUTO ou 100px 100px;</h3>
+
+        <div class="template-column containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <hr>
+
+        <P>O ROWS IRA DEFINIR O TAMANHO DAS LINHAS(FILEIRA HORIZONTAL) DA GRADE. COLOCO OS VALORES EM PXs PARA DEFINIR O TAMANHO DA LINHA</p>
+        <p>PS: SE EU PASSAR UM VALOR. APENAS UMA LINHA SERA MODIFICADA. SE EU PASSAR DOIS VALORES, DUAS LINHAS SERAO MODIFICADAS DE CIMA PRA BAIXO</p>
+
+        <h3>grid-template-rows: 50px 100px 50px;</h3>
+
+        <div class="template-rows containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <p>IMPORTANTE: COLUMNS AUMENTA TAMANHO E QUANTIDADE. ROWS AUMENTA APENAS A ALTURA DAS LINHAS</p>
+
+    </div>
+
+    <div class="aula-2">
+        <h1>AULA 2</h1>
+        <h1>PROPRIEDADES GRID CONTAINERS</h1>
+
+        <h3>REPEAT - grid-template-rows: REPEAT(2, 100px OU AUTO);</h3>
+
+        <p>REPEAT IRA CRIAR REPETIR AS LINHAS DE ACORDO COM O NUMERO QUE EU CITAR. E OS VALORES EM PXs COLOCO AO LADO DEPOIS DO VIRGULA,,,</p>
+
+        <div class="grid-template-rows-repeat containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+        <p>OBS: O MESMO PODE SER FEITO COM TEMPLATE -COLUMNS</p>
+
+        <hr>
+
+        <p>GRID-TEMPLATE - JUNSAO DE ROW E COLUMN</p>
+        <p>ROW < ESQUERDA</p>
+        <p>COLUMN > DIREITA</p>
+
+        <h3>GRID-TEMPLATE: repeat(3, 50PX) / repeat(2, auto);</h3>
+
+        <div class="grid-template containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <hr>
+
+        <h2>GAP</h2>
+
+        <p>GAP IRA CRIAR UM ESPAÇAMENTO ENTRE OA ELEMENTOS FILHOS. OS GAPS SAO:</p>
+        <P>GRID-ROW-GAP: 10px; ESPAÇAMENTO CENTIDO HORIZONTAL (EM LINHA)</P>
+        <P>GRID-COLUMN-GAP: 10px; ESPAÇAMENTO CENTIDO VERTICAL (COLUNA)</P>
+        <P>GRID-GAP ou GAP: 10px 10px; ESPAÇAMENTO CENTIDO HORIZONTAL (EM LINHA) E VERTICAL (COLUMN)</P>
+
+        <h3>GAP: 20px;</h3>
+
+        <div class="grid-gap containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+        <hr>
+
+        <h2>MINMAX</h2>
+
+        <p>MINMAX SERA O TAMANHO MINIMO AO MAXIMO DO ELEMENTO(FILHO) :</p>
+        <p>ESQUERDA TAMANHO MINIMO</p>
+        <p>DIREITA TAMANHO MAXIMO</p>
+
+        <h2>grid-template: repeat(2, 50px) / repeat(3,MINMAX(50px, 200px));</h2>
+
+        <div class="minmax containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+
+        </div>
+
+    </div>
+
+    <div class="aula-3">
+
+        <h1>AULA 3 GRID ITEMS</h1>
+
+        <h1>GRID - OCUPNDO ESPAÇOS</h1>
+
+        <h3>GRID-COLUMN-START: 1;</h3>
+        <h3>GRID-COLUMN-END: 2;</h3>
+
+        <p>START FARA MEU ELEMENTO FILHO COMEÇAR NA COLUNA QUE EU CITAR. END FARA MEU ELEMNTO FILHO TERMINAR ONDE EU CITAR</p>
+
+        <h3>GRID-COLUMN-START: 2; GRID-COLUNM-END: 6;</h3>
+        <p>SEMPRE DEVO SEMPRE COLOCAR 1 A MAIS ONDE EU DESEJAR QUE TERMINE.</p>
+        <div class="column-start-end containers">
+
+            <div class="item">item 1</div>
+            <div class="item start-end">START-END</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 8</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+        <hr>
+
+        <h3>GRID-ROW-START: 1;</h3>
+        <h3>GRID-ROW-END: 3;</h3>
+
+        <p>START FARA MEU ELEMENTO FILHO COMEÇAR NA COLUNA QUE EU CITAR. END FARA MEU ELEMNTO FILHO TERMINAR ONDE EU CITAR</p>
+
+        <h3>GRID-ROW-START: 1; GRID-ROW-END: 3;</h3>
+        <p>SEMPRE DEVO COLOCAR 1 A MAIS NO END ONDE EU DESEJAR QUE ELE TERMINE.</p>
+        <div class="row-start-end containers">
+
+            <div class="item">item 1</div>
+            <div class="item start-end">START-END</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 8</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+        <hr>
+
+        <h2>JUNÇAO DE GRID START E END</h2>
+
+        <h3>GRID-COLUMN: 1 / 6;</h3>
+        <h3>GRID-ROW: 1 / 3;</h3>
+
+        <p>SEMPRE DEVO COLOCAR 1 A MAIS NO END ONDE EU DESEJAR QUE ELE TERMINE</p>
+
+        <h3>GRID-COLUMN: 2 / 6;</h3>
+        <h3>GRID-ROW: 1 / 3;</h3>
+        
+        <div class="column-row-start-end containers">
+
+            <div class="item">item 1</div>
+            <div class="item start-end">START-END</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 8</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+        <hr>
+
+        <h2>SPAN (PROPRIEDADE GRID ITEM)</h2>
+        
+        <h3>GRID-COLUMN: 1 / SPAN 5;</h3>
+        <h3>GRID-ROW: 1 / SPAN 2;</h3>
+
+        <p>SPAN IRA ESPANDIR A PARTIR DO START DEFINIDO. SEM A NESCESSIDADE DE ADIANTAR 1 A MAIS NOS ENDs</p>
+
+        <h3>GRID-COLUMN: 2 / SPAN 4;</h3>
+        <h3>GRID-ROW: 1 / SPAN 3;</h3>
+        
+        <div class="span containers">
+
+            <div class="item">item 1</div>
+            <div class="item start-end">START-END</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 8</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+    </div>
+
+    <div class="aula-4">
+
+        <h2>AULA 4</h2>
+
+        <h3>GRID AREA (GRID ITEM)</h3>
+
+        <p>JUÇAO DE GRID-ROW E GRID-COLUMN PARA O ITEM OCUPAR OS ESPAÇOS</p>
+
+        <h3>ORDEM:</h3>
+
+        <h3>GRID-ROW-START</h3>
+        <h3>GRID-COLUMN-START</h3>
+        <h3>GRID-ROW-END</h3>
+        <h3>GRID-COLUMN-END</h3>
+
+        <h2>GRID-AREA: 2 / 3 / span 2 / span 2;</h2>
+
+        <div class="grid-area containers">
+
+            <div class="item">item 1</div>
+            <div class="item grid-area-item">GRID-AREA</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 8</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+    </div> -->
+
+    <div class="aula-5">
+
+        <!-- <h1>AULA 5 GRID CONTAINER</h1> -->
+        <!-- <h2>GRID-TEMPLATE-AREA</h2>
+
+        <h3>OS NOMES QUE EU COLOCAR NO GRID-TEMPLATE-AREA SERAO OS NOMES QUE EU DEI NOS ITEMS DENTRO DO GRID-AREA</h3>
+
+        <h3>GRID-TEMPLATE-AREA: (GIRD CONTAINER) CADA ASPAS SERA UMA LINHA. E CADA NOME DENTRO DAS ASPAS SERA UMA COLUNA</h3>
+
+        <h3>GRID-AREA: (GRID ITEM) COLOCO O NOME QUE EU QUISER NO ITEM PRA COLOCAR LA NO GRID-TEMPLATE-AREA </h3>
+
+        <h4>1 - COLOCO O GRID-TEMPLATE-AREA NO MEU CONTAINER </h4>
+        <h4>2 - COLOCO O GRID-AREA NOS MEUS ITEMS E CRIO SEUS NOMES</h4>
+        <h4>3 - NO GRID-TEMPLATE-AREA CADA NOME DENTRO DAS ASPAS SERA UMA COLUNA. E CADA ASPAS SERA UMA LINHA</h4>
+
+        <h2>.grid-template-area{</h2>
+        <h2>display: grid;</h2>
+        <h2>grid:</h2>
+        <h2>"verde verde azul azul azul" minmax(20px, 100px)</h2>
+        <h2>"verde verde laranja laranja verde-escuro" 100px</h2>
+        <h2>"rosa . laranja laranja marrom" 100px / 100px 100px 100px 100px minmax(20px, 100px)</h2>
+        <h2>;</h2>
+        <h2>}</h2>
+
+        <h3>OBS:GRID É UMA ABREVIAÇAO DO GRID-TEMPLATE-AREA QUE POSSIBILITA CITAR VALORES EM PXs. APOS AS ASPAS SAO REFERENTES A AUTURA DAS LINHAS. APOS A / CADA VALOR É REFERENTE A LARGURA DE CADA COLUNA</h3>
+        <h3>OBS: QUANDO EU QUISER DEIXAR UM ESPAÇO EM BRANCO, COLOCO UM .PONTO. NO LUGAR DO NOME</h3> -->
+
+
+        <!-- <div class="grid-template-area">
+
+            <div class="verde">verde</div>
+            <div class="azul">azul</div>
+            <div class="laranja">laranja</div>
+            <div class="verde-escuro">verde-escuro</div>
+            <div class="marrom">marrom</div>
+            <div class="vermelho">vermelho</div>
+            <div class="rosa">rosa</div>
+            <div class="roxo">roxo</div>
+
+        </div> -->
+
+    </div>
+    
+    <!-- <div class="aula-6">
+
+        <h1>AULA 6</h1>
+        <h2>AUTO-FILL E AUTO-FIT</h2>
+
+        <h3>OS DOIS TEM A MESMA FUNÇAO. QUEBRAR COLUNAS QUANDO O CONTAINER FOR DIMINUIDO E CRIAR MAIS QUANDO ELA FOR AUMENTADA, MAS COM PEQUENAS DIFERENÇAS</h3>
+
+        <h3>O FIT IRA CRIAR MAIS COLUNAS QUANDO HOUVER APENAS UMA LINHA DE ITEMS OCUPADOS MESMO QUE NAO TENHA MAIS ITEMS</h3>
+        <h3>O FILL IRA ESTICAR OS ITEMS AO MAXIMO QUANDO HOUVER APENAS UMA LINHA SEM CRIAR MAIS COLUNAS. SOMENTE COM OS ITEMS COLOCADOS NO HTML</h3>
+
+        <h3>OBS: COM 1FR APLICADO NO MINMAX(MAXIMO). AUMENTANDO A TELA, O ITEM IRA EXPANDIR ATE UMA FRAÇAO, E QUANDO O TAMANHO ULTRAPASSAR ESTA FRAÇAO, O FILL OU FIT, IRA CRIAR MAIS COLUNAS COM OS ITMES COM O TAMANHO MINIMO CITADO NO MINMAX, OCUPANDO O TAMANHO DO CONTAINER QUE RESTOU. MESMO EFEITO PARA QUANDO DIMIUIR A TELA: <span>1 FR, SIGNIFICA 1 FRAÇAO. SE TIVER QUATRO COLUNAS 1 FR SERA 25% DO TAMANHO MAXIMO DO ITEM</span></h3>
+
+        <div class="grid-auto containers">
+
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+            <div class="item">item 5</div>
+            <div class="item">item 6</div>
+            <div class="item">item 7</div>
+            <div class="item">item 8</div>
+            <div class="item">item 9</div>
+            <div class="item">item 10</div>
+
+        </div>
+
+    </div>
+     -->
+</div>
+
+<div class="grid-template-area">
+
+  <div class="verde">verde</div>
+  <div class="azul">azul</div>
+  <div class="laranja">laranja</div>
+  <div class="verde-escuro">verde-escuro</div>
+  <div class="marrom">marrom</div>
+  <div class="vermelho">vermelho</div>
+  <div class="rosa">rosa</div>
+  <div class="roxo">roxo</div>
+
+</div>
+
+</body>
+</html>
